@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .nav-link{
+        font-size: 17px;
+        color: white;
+        margin-left: 70px;
+        /* border-bottom: 2px solid rgb(246, 163, 8); */
+    }
+    
+    .nav-link:hover{
+        font-size: 17px;
+        color: orange;
+        /* border-bottom: 2px solid rgb(246, 163, 8); */
+    }
+    .navbar-brand{
+        color: rgb(234, 132, 15);
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        width: 50px;
+    }
+    .navvv{
+        margin-left: 34%;
+    }
+    button{
+        width: 200px;
+        padding: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(220, 156, 19);
+        color: white;
+        outline: none;
+        font-size: 19px;
+        cursor: pointer;
+        transition: all 0.8s ease;
+    }
+    button:hover{
+        border: none;
+        border-radius: 5px;
+        background-color:  rgb(190, 122, 5);
+        color: white;
+        font-size: 19px;
+    }
+    .header {
+        background-image: url('../media/restau.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+
+    }
+
+    .smart2 {
+        background: linear-gradient(to right, #000000ab, #000000e2);
+        height: 300px;
+        width: 1000vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbaar{
+        background-color: black;
+    }
+    .footer1 {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 30px;
+        margin: 0%;
+    }
+
+    .link {
+        font-size: 18px;
+        color: orange;
+        border-right: 3px solid orange;
+        padding: 8px;
+        font-family: cursive;
+    }
+    .service{
+        width: 290px;
+        height: 290px;
+        z-index: 1;
+
+    }
+    .iconscard{
+        color: orange;
+        font-size: 50px;
+        transition: all 0.6s ease ;
+    
+    }
+    .iconscard:hover{
+        color: white;
+        font-size: 50px;
+    }
+    .card-body{
+        background-color: white;
+        /* box-shadow:0 4px 8px rgba(0, 0, 0, 0.709); */
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        transition: all 0.6s ease ;
+    }
+    .card-body:hover{
+        background-color: rgb(213, 120, 20);
+        color: white;
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.709);
+    }
+    .food{
+        border-right:  3px solid orange;
+        text-align: center;
+    }
+    .warning{
+        color: orange;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .food2{
+        color: black;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .menu1,.menu2,.menu3{
+        border-bottom: 2px solid black;
+        cursor: pointer;
+        transition: all0.5s ease;
+    }
+    .menu1:hover,.menu2:hover,.menu3:hover{
+        border-bottom: 2px solid rgb(236, 156, 9);
+    }
+    .menu1:focus,.menu2:focus,.menu3:focus{
+        border-bottom: 2px solid rgb(236, 156, 9);
+    }
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbaar">
+      <a class="navbar-toggler" data-toggle="collapse" href="#x">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #ecb213;"></i></span>
+      </a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-burger" style="color: #eda302;"></i>&nbsp;Navbar</a>
+
+          <div class="collapse navbar-collapse navvv" id="x">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../template/restaurent.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/about.html">About</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row header">
+        <div class="smart2">
+            <h1 class="text-white">Services</h1>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-3">
+          <div class="card m-5 service">
+            <div class="card-body">
+              <i class="fa-solid fa-heart-pulse iconscard"></i>
+              <br><br>
+              <h5 class="card-title">Master Chef</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the
+                bulk Lorem, ipsum
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-3">
+          <div class="card m-5 service">
+            <div class="card-body">
+              <i class="fa-solid fa-x-ray iconscard"></i>
+              <br><br>
+              <h5 class="card-title">Quality Food</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the
+                <br>bulk Lorem, ipsum
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-3">
+          <div class="card m-5 service">
+            <div class="card-body">
+              <i class="fa-solid fa-brain iconscard"></i>
+              <br><br>
+              <h5 class="card-title">Online Order</h5>
+              <p class="card-text">Some plus-item example text to build on the card title
+                and make up Lorem, ipsum</p>
+              <br>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+    
+        <div class="col-sm-3">
+          <div class="card m-5 service">
+            <div class="card-body">
+              <i class="fa-solid fa-brain iconscard"></i>
+              <br><br>
+              <h5 class="card-title">24/7 Service</h5>
+              <p class="card-text">Some plus-item example text to build on the card title
+                and make Lorem, ipsum</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="row mb-3">
+        <div class="col-sm-12 d-flex justify-content-center warning">
+          <h3 class="food">Food Menu &nbsp;</h3>
+        </div>
+      </div>
+    
+      <div class="row mb-5">
+        <div class="col-sm-12 d-flex justify-content-center warning">
+          <h2 class="food2">MOst FOod POpular</h2>
+        </div>
+      </div>
+    
+    
+      <div class="row mb-5">
+        <div class="col-sm-12 d-flex justify-content-center warning">
+          <div class="menu1">
+            <div class="d-flex justify-content-center p-2">
+              <h3 id="menu-item"><i class="fa-solid fa-burger" style="color: #eda302;"></i> &nbsp;</h3>
+              <p><span class="text-secondary"> &nbsp; &nbsp;Popular</span> <br> &nbsp; &nbsp;Break Fast</p>
+            </div>
+          </div>
+    
+    
+          <div class="menu2">
+            <div class="d-flex justify-content-center p-2">
+              <h3 id="menu-item"> <i class="fa-solid fa-mug-hot" style="color: #dfc12a;"></i> &nbsp;&nbsp;</h3>
+              <p><span class="text-secondary"> &nbsp; &nbsp;Special</span> <br> &nbsp; &nbsp;Launch</p>
+            </div>
+          </div>
+    
+    
+          <div class="menu3">
+            <div class="d-flex justify-content-center p-2">
+              <h3 id="menu-item"><i class="fa-solid fa-utensils" style="color: #d8bd0e;"></i> &nbsp;&nbsp;</h3>
+              <p><span class="text-secondary"> &nbsp; &nbsp;Lovely</span> <br> &nbsp; &nbsp;Dinner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- lwla -->
+      <div class="row mb-5">
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza1.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza1.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+      </div>
+    
+      <!-- tania -->
+      <div class="row mb-5">
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza2.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza2.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+      </div>
+    
+      <!-- talta -->
+      <div class="row mb-5">
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza3.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza3.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+      </div>
+    
+      <!-- rab3a -->
+      <div class="row mb-5">
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza4.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-around">
+          <div class="d-flex justify-content-center">
+            <img src="../media/pizza4.png" width="100" class="mr-2" alt="image">
+            <h5 class="text-secondary"><span class="span">Sandwich Berger</b></span><br>
+              <hr>Lorem ipsum dolor sit amet consectetur
+            </h5>
+          </div>
+          <h5 class="price">150$</h5>
+        </div>
+      </div>
+
+
+
+
+
+    <div class="row w-100 mt-5 mb-0 footer1">
+        <div class="col-sm-12">
+            <footer class="footer bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2 class="text-warning link">Restoran</h2>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="text-warning link">About Us</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                Odio saepe aliquam omnis ex ducimus quis temporibus
+                                quos fugit ad dolore.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="text-warning link">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li>Email: info@example.com</li>
+                                <li>Phone: +1233567890</li>
+                                <li>Address: 123 Street, City, Country</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="text-warning link">Follow Us</h5>
+                            <ul class="list-inline footer-links mt-5">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-facebook"
+                                            style="color: rgb(215, 115, 9);font-size:45px"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"
+                                            style="color: rgb(215, 115, 9);font-size:45px"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"
+                                            style="color: rgb(215, 115, 9);font-size:45px"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-linkedin"
+                                            style="color: rgb(215, 115, 9);font-size:45px"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Your Website. All rights reserved.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
